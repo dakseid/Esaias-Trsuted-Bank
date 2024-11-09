@@ -212,19 +212,6 @@ nav a.active {
     background-color: #45a049;
 }
 
-/* Footer Styles */
-footer {
-    background-color: #003366;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: 60px;
-}
-
-footer p {
-    font-size: 1rem;
-}
-
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .contact-details {
@@ -264,7 +251,7 @@ footer p {
         font-size: 1.5rem;
     }
 
-   /* Footer Styles */
+    /* Footer Styles */
 .footer {
     background: linear-gradient(40deg, #2c3e50, #34495e); /* Muted dark blue-gray background */
     color: #ecf0f1; /* Light gray text for readability */
