@@ -1,0 +1,301 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f6f8;
+}
+
+/* Signup Container */
+.signup-container {
+    display: flex;
+    max-width: 1000px;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjusted Image Section */
+.signup-image {
+    flex: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    max-width: 60%;
+}
+
+.signup-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Form Section */
+.signup-form {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 40%;
+}
+
+.signup-form h2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.signup-form p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Form Styles */
+.signup-form form label {
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.signup-form form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.signup-form form .btn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    text-decoration: none;
+}
+
+.signup-form form .btn:hover {
+    background-color: #45a049;
+}
+
+/* Social Signup */
+.social-signup {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.social-signup p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.social-btn {
+    background: #f4f6f8;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    color: #666;
+}
+
+.social-btn i {
+    margin-right: 8px;
+}
+
+/* Sign-In Link */
+.signin-link {
+    text-align: center;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.signin-link a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signin-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .signup-container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .signup-image {
+        max-width: 100%;
+        height: auto;
+    }
+    .signup-form {
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+    .signup-image img {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+ 
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f6f8;
+}
+
+/* Signin Container */
+.signin-container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjusted Image Section */
+.signin-image {
+    flex: 1.2; /* Image takes a bit more space */
+    max-width: 60%; /* Allows more room for the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.signin-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Form Section */
+.signin-form {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 40%;
+}
+
+.signin-form h2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.signin-form p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+/* Form Styles */
+.signin-form form label {
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.signin-form form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.signin-form form .btn {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+.signin-form form .btn:hover {
+    background-color: #45a049;
+}
+
+/* Social Sign-In */
+.social-signin {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.social-signin p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.social-btn {
+    background: #f4f6f8;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    color: #666;
+}
+
+.social-btn i {
+    margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .signin-container {
+        flex-direction: column;
+        max-width: 90%;
+    }
+    .signin-image {
+        max-width: 100%;
+        height: 250px;
+    }
+}

@@ -1,0 +1,309 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    color: #333; /* Dark text color for good readability */
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+/* Footer Styles */
+.footer {
+    background: linear-gradient(40deg, #2c3e50, #34495e); /* Muted dark blue-gray background */
+    color: #ecf0f1; /* Light gray text for readability */
+    padding: 40px 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-section:hover {
+    transform: scale(1.05); /* Slight expansion on hover */
+}
+
+.footer-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ecf0f1;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    color: #ecf0f1; /* Light text for links */
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s ease-in-out;
+}
+
+.footer-section a:hover {
+    color: #3498db; /* Slight blue on hover */
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0 0;
+    font-size: 0.9em;
+    color: #bdc3c7; /* Light gray for footer text */
+}
+
+/* Section Box Styles */
+.section {
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* White background for sections */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.section:hover {
+    transform: scale(1.05); /* Slight expansion on hover */
+}
+
+.section h2 {
+    font-size: 2.5em;
+    color: #2c3e50; /* Dark text */
+}
+
+.section p {
+    font-size: 1.1em;
+    color: #7f8c8d; /* Light gray text */
+}
+
+/* Intro Section */
+.intro-section {
+    background: linear-gradient(135deg, #e1e8f0, #c4c9d3); /* Soft, light gradient */
+    padding: 40px;
+    text-align: center;
+}
+
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Text Content Styling */
+.text-content {
+    flex: 1; /* Allow text content to take up available space */
+    padding-right: 20px; /* Space between text and GIF */
+}
+
+.text-content h2 {
+    font-size: 2.5em;
+    color: #2c3e50; /* Dark text */
+}
+
+.text-content p {
+    font-size: 1.2em;
+    color: #7f8c8d; /* Light gray text */
+}
+
+/* GIF Content Styling */
+.gif-content {
+    flex-shrink: 0; /* Prevent the GIF from resizing */
+    transform: scale(1);
+}
+
+.gif-content img {
+    max-width: 200px; /* Set the desired width of the GIF */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50px;
+}
+.intro-section h2 {
+    font-size: 2.5em;
+    color: #4CAF50; /* Dark text */
+}
+
+.intro-section p {
+    font-size: 1.2em;
+    color: #7f8c8d; /* Light gray text */
+}
+
+/* Features Section */
+.features-section {
+    background-color: #ecf0f1; /* Light gray background */
+}
+
+.features-section h2 {
+    font-size: 2.2em;
+    color: #2980b9; /* Soft blue for headings */
+}
+
+.features-section p {
+    font-size: 1.1em;
+    color: #2c3e50; /* Dark text for readability */
+}
+
+.feature-card {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #ffffff; /* White background for cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: scale(1.05); /* Expand the card on hover */
+}
+
+.feature-card h3 {
+    font-size: 1.5em;
+    color: #2c3e50; /* Dark text for card headings */
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #ffffff;
+    gap: 100px;
+}
+
+.stat-box {
+    width: 300px;
+    padding: 40px;
+    background-color: #4CAF50; 
+    border-radius: 10px;
+    color: #fff;
+    transition: transform 0.3s ease-in-out;
+    position: relative; /* Ensure stat-box is the reference for positioning */
+}
+
+.stat-box:hover {
+    transform: scale(1.05); /* Slight expansion on hover */
+}
+
+.stat-box h2 {
+    font-size: 4.5em;
+    margin: 0;
+    color: aliceblue;
+}
+
+.stat-box p {
+    font-size: 1.3em;
+    margin-top: 5px;
+    color: #ecf0f1; /* Light gray text for stats */
+}
+
+.stat-box i {
+    position: absolute; /* Position the icon absolutely within the stat-box */
+    top: 10px; /* 10px from the top */
+    right: 10px; /* 10px from the right */
+    font-size: 1.5em; /* Icon size */
+    color: #fff; /* White color for the icon */
+}
+
+/* Reviews Section */
+.reviews-section {
+    background-color: #ecf0f1; /* Soft light gray background */
+}
+
+.reviews-section h2 {
+    font-size: 2.2em;
+    color: #2c3e50;
+}
+
+.review-card {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #ffffff; /* White background for review cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.review-card:hover {
+    transform: scale(1.05); /* Expand the review card on hover */
+}
+
+.review-card p {
+    font-size: 1.1em;
+    color: #314961; /* Dark gray text for review content */
+}
+
+.review-card span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2c3e50; /* Slightly darker gray for names */
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(45deg, #ecf0f1, #bdc3c7); /* Subtle gray gradient */
+    color: #2c3e50;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.cta-section h2 {
+    font-size: 2.5em;
+    color: #2c3e50; /* Dark text for call-to-action title */
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.2em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    background: #4CAF50; /* Soft blue background for button */
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+    background-color: #3498db; /* Lighter blue on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
