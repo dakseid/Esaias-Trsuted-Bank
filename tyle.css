@@ -1,0 +1,35 @@
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav li {
+        margin: 10px 0;
+    }
+}

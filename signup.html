@@ -10,9 +10,10 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.8.0/css/all.min.css">
     <!-- Custom Stylesheets -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
+    
     <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="tyle.css">
+    
     <!-- Favicon -->
     <link rel="shortcut icon" href="./IMG_20240604_173855_627.jpg" type="image/x-icon">
     <!-- Google Fonts -->
@@ -26,20 +27,24 @@
                 <div class="logo">
                     <h1><img src="./IMG_20240604_173855_627.jpg" alt="logo" class="logo-image"></h1>
                 </div>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                    <li><a href="./transfer.html">Transfer</a></li>
-                    <li><a href="./transactions.html">Transactions</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                </ul>
-                <ul>
-                    <li><a href="./signup.html">Sign Up</a></li>
-                </ul>
+                <div class="menu-toggle">
+                    <i class="bi bi-list"></i>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="main-nav">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./transfer.html">Transfer</a></li>
+                        <li><a href="./transactions.html">Transactions</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                    </ul>
+                    
+                </div>
             </nav>
         </div>
     </header>
+
     
     <div class="signup-container">
         <!-- Image Section -->
@@ -85,6 +90,7 @@
 
     <!-- External JavaScript -->
     <script src="./script.js"></script>
+    <script src="signup.js"></script>
 </body>
-
+<script src="https://kit.fontawesome.com/7bd95366e2.js" crossorigin="anonymous"></script>
 </html>

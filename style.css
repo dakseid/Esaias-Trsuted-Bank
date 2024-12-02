@@ -7,9 +7,9 @@
 
 /* Container Styles */
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,7 +56,6 @@ nav {
     background: #4CAF50;
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
 }
 
 .logo img {
@@ -168,4 +167,175 @@ nav a.active {
     max-width: 50%;
     height: auto;
     border-radius: 8px;
+}
+
+/* CTA Section */
+.cta-section {
+    display: flex;
+    align-items: center;
+}
+
+.cta-img img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Signup Container */
+.signup-container {
+    display: flex;
+    max-width: 1000px;
+    width: 90%;
+    margin: 80px auto;  /* Simplified margin */
+}
+
+.signup-image {
+    flex: 1;  /* Changed from 1.2 */
+    max-width: 50%;  /* Changed from 60% */
+    min-height: 400px;  /* Added minimum height */
+    position: relative;  /* Added for better image control */
+}
+
+.signup-image img {
+    position: absolute;  /* Better image positioning */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.signup-form {
+    flex: 1;
+    padding: 2rem;
+    max-width: 50%;  /* Changed from 40% */
+}
+
+/* Responsive Design for Signup */
+@media (max-width: 768px) {
+    .signup-container {
+        flex-direction: column;
+        width: 95%;  /* Slightly increased for mobile */
+        margin: 40px auto;  /* Reduced top margin on mobile */
+    }
+    
+    .signup-image {
+        max-width: 100%;
+        min-height: 250px;  /* Reduced height on mobile */
+        position: relative;
+    }
+    
+    .signup-form {
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+}
+
+/* Similar changes for Signin Container */
+.signin-container {
+    display: flex;
+    max-width: 900px;
+    width: 90%;
+    margin: 80px auto;
+}
+
+.signin-image {
+    flex: 1;  /* Changed from 1.2 */
+    max-width: 50%;  /* Changed from 60% */
+    min-height: 400px;
+    position: relative;
+}
+
+.signin-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Design for Signin */
+@media (max-width: 768px) {
+    .signin-container {
+        flex-direction: column;
+        width: 95%;
+        margin: 40px auto;
+    }
+    
+    .signin-image {
+        max-width: 100%;
+        min-height: 250px;
+        position: relative;
+    }
+    
+    .signin-form {
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+}
+
+/* Add this for better mobile experience */
+@media (max-width: 480px) {
+    .signup-image,
+    .signin-image {
+        min-height: 200px;
+    }
+    
+    .signup-form,
+    .signin-form {
+        padding: 1rem;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .nav-links ul li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
 }

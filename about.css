@@ -20,6 +20,7 @@ h1, h2, h3 {
 header {
     background: #003366;
     padding: 20px 0;
+    position: relative;
 }
 
 header .container {
@@ -40,6 +41,7 @@ nav {
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    position: relative;
 }
 
 .logo img {
@@ -249,4 +251,56 @@ footer p {
     padding: 20px 0 0;
     font-size: 0.9em;
     color: #bdc3c7; /* Light gray for footer text */
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px; /* Increased size */
+    z-index: 1000; /* Ensure it's above other elements */
+    color: #000; /* Make sure icon is visible - adjust color as needed */
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+        order: 2;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    .logo {
+        order: 1;
+        margin: 0;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        order: 3;
+        margin-top: 15px;
+        background-color: #4CAF50;
+        border-radius: 10px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
 }

@@ -15,15 +15,15 @@ body {
 
 /* Container Styles */
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 0px;
 }
 
 /* Header Styles */
 header {
-    background-color: #003366;
-    padding: 20px 0;
+    width: 100%;
+    padding: 0px 0;
 }
 
 /* Navigation Bar Styles */
@@ -33,9 +33,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     background: #4CAF50;
-    padding: 10px 20px;
+    padding: 0px 0px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
 }
 
 .logo img {
@@ -220,6 +219,78 @@ nav a.active {
     .service-card {
         padding: 20px;
     }
+    /* Improve responsiveness for service cards */
+    .service-cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        width: 100%;
+    }
+
+    /* Add smooth transitions */
+    .service-card {
+        transition: all 0.3s ease-in-out;
+        transform-origin: center;
+        backface-visibility: hidden;
+    }
+
+    /* Enhance hover effects */
+    .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    /* Improve footer responsiveness */
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+
+    /* Add smooth scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Optimize images for different screen sizes */
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Improve form responsiveness */
+    input, textarea, select, button {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    /* Enhanced touch targets for mobile */
+    @media (max-width: 768px) {
+        button, 
+        .nav-link,
+        .footer-section a {
+            min-height: 44px;
+            min-width: 44px;
+            padding: 12px;
+        }
+
+        /* Improve navigation for mobile */
+        nav ul {
+            gap: 15px;
+            padding: 10px;
+        }
+    }
+
+    /* Optimize layout for tablets */
+    @media (max-width: 1024px) {
+        .container {
+            padding: 0 20px;
+        }
+    }
 
     .service-card h3 {
         font-size: 1.7rem;
@@ -241,5 +312,50 @@ nav a.active {
 
     .service-card p {
         font-size: 1rem;
+    }
+}
+
+/* Mobile Menu Styles */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
     }
 }

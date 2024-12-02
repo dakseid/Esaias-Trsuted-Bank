@@ -141,6 +141,12 @@
     
     <!-- CSS (Inline for demonstration) -->
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #f4f6f8;
@@ -188,7 +194,6 @@ nav {
     background: #4CAF50;
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
 }
 
 .logo img {
@@ -238,7 +243,7 @@ nav a.active {
         header {
             background-color: #4CAF50;
             color: white;
-            padding: 1rem;
+            padding: 0rem;
             text-align: center;
         }
 
@@ -403,6 +408,50 @@ nav a.active {
     color: #bdc3c7; /* Light gray for footer text */
 }
 
+/* Mobile Menu Styles */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+}
     </style>
 
     <script src="./script.js"></script>

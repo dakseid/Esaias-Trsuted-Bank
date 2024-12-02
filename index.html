@@ -33,17 +33,25 @@
                 <div class="logo">
                     <h1><img src="./IMG_20240604_173855_627.jpg" alt="logo" class="logo-image"></h1>
                 </div>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                    <li><a href="./transfer.html">Transfer</a></li>
-                    <li><a href="./transactions.html">Transactions</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                </ul>
-                <ul>
-                    <li><a href="./signup.html">Sign Up</a></li>
-                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="nav-links" id="nav-links">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./transfer.html">Transfer</a></li>
+                        <li><a href="./transactions.html">Transactions</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./signup.html">Sign Up</a></li>
+                    </ul>
+                    <ul>
+                        
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -59,35 +67,6 @@
             <div class="banner-img">
                 <img src="./iPhone 13.png" alt="Mobile Banking App" />
             </div>
-        </div>
-    </section>
-
-    <!-- Intro Section -->
-    <section class="intro-section section">
-        <div class="text-content">
-            <h2>Your Trusted Banking Partner</h2>
-            <p>Providing you with secure, accessible, and user-friendly banking future.</p>
-        </div>
-        <div class="gif-content">
-            <img src="./Venmo Credit Card.gif" alt="Rotating ATM" />
-        </div>
-    </section>
-    
-
-    <!-- Features Section -->
-    <section class="features-section section">
-        <h2>Our Key Features</h2>
-        <div class="feature-card">
-            <h3>Real-Time Asset Management</h3>
-            <p>Track and manage your assets at any time from anywhere in real time.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Seamless Integration</h3>
-            <p>Our platform integrates with your existing financial tools for enhanced convenience.</p>
-        </div>
-        <div class="feature-card">
-            <h3>Advanced Security</h3>
-            <p>We use state-of-the-art security measures to keep your money and data safe.</p>
         </div>
     </section>
 
@@ -110,6 +89,39 @@
         </div>
     </section>
 
+
+    <!-- Intro Section -->
+    <section class="intro-section section">
+        <div class="text-content">
+            <h2>Your Trusted Banking Partner</h2>
+            <p>Providing you with secure, accessible, and user-friendly banking future.</p>
+        </div>
+        <div class="gif-content">
+            <img src="./Venmo Credit Card.gif" alt="Rotating ATM" />
+        </div>
+    </section>
+    
+
+    <!-- Features Section -->
+    <section class="features-section section">
+        <h2>Our Key Features</h2>
+        <div class="feature-cards-container">
+            <div class="feature-card">
+                <h3>Real-Time Asset Management</h3>
+            <p>Track and manage your assets at any time from anywhere in real time.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Seamless Integration</h3>
+            <p>Our platform integrates with your existing financial tools for enhanced convenience.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Advanced Security</h3>
+            <p>We use state-of-the-art security measures to keep your money and data safe.</p>
+            </div>
+        </div>
+    </section>
+
+    
     <!-- Reviews Section -->
     <section class="reviews-section section">
         <h2>What Our Customers Say</h2>
@@ -125,9 +137,15 @@
 
     <!-- Call to Action Section -->
     <section class="cta-section section">
+        <div id="cta-container">
         <h2>Join Us Today</h2>
         <p>Open an account with us and start your journey to financial freedom.</p>
         <a href="./signup.html" class="cta-btn">Open an Account Now</a>
+        </div>
+
+        <div class="cta-img">
+            <img src="./3D mobile banking transaction illustration.jfif" alt="Mobile Banking App" />
+        </div>
     </section>
 
     <!-- Footer Section -->
@@ -162,6 +180,7 @@
 
     <!-- External JS -->
     <script src="./script.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>

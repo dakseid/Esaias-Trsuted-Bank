@@ -20,7 +20,7 @@ body {
 }
 
 .footer-content {
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
@@ -89,9 +89,6 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-.section:hover {
-    transform: scale(1.05); /* Slight expansion on hover */
-}
 
 .section h2 {
     font-size: 2.5em;
@@ -158,7 +155,15 @@ body {
 
 /* Features Section */
 .features-section {
+    width: 100%;
     background-color: #ecf0f1; /* Light gray background */
+}
+
+.feature-cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .features-section h2 {
@@ -234,6 +239,45 @@ body {
     color: #fff; /* White color for the icon */
 }
 
+/* Media Query for Tablets */
+@media screen and (max-width: 1024px) {
+    .stats {
+        gap: 30px;
+        padding: 0 20px;
+    }
+    
+    .stat-box {
+        width: 250px;
+        padding: 30px;
+    }
+    
+    .stat-box h2 {
+        font-size: 3.5em;
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .stat-box {
+        width: 90%;
+        max-width: 300px;
+    }
+    
+    .stat-box h2 {
+        font-size: 3em;
+    }
+    
+    .stat-box p {
+        font-size: 1.1em;
+    }
+}
+
 /* Reviews Section */
 .reviews-section {
     background-color: #ecf0f1; /* Soft light gray background */
@@ -306,4 +350,49 @@ body {
 .cta-btn:hover {
     background-color: #3498db; /* Lighter blue on hover */
     transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Mobile Menu Styles */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #4CAF50;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
 }
